@@ -1,30 +1,28 @@
 package PGPpackage;
 
-import javax.swing.*;
+//import javax.swing.*;
 
-public class PGPs {
-	private String Ley = "";
-	private int Probel = 0;
-	
-	public int Sum;
+public class PGPs { // открытый класс PGPs
+	private String Ley = ""; // текст
+	private int Probel = 0; // кол-во пробелов	
+	public int Sum; // Итог
 	
 	public PGPs (String Ley) 
 	{
+		//if (Ley.length() <= 0) //if (Ley == "" || Ley != "*" ) //|| Ley != "0")
 		if (Ley == "")
 		{
+			//this.Ley = "*"; //System.out.println("Incorrect format error");		
 			Sum = 0;
-		
 		} 		 
 	   	else
 	   	{
-	   		this.Ley = Ley;
-	   		
-	   		Calculate();
-	   		
+	   		this.Ley = Ley;	   		
+	   		Calculate();	   		
 	   	}	
 		
 }		 
-	private void Calculate()
+	private void Calculate() // метод расчета количества символов
 	{
 		if(Ley.length() != 0){
 	   		 for(int i=0;i<Ley.length();i++){ 	
@@ -35,12 +33,7 @@ public class PGPs {
 	   	 if (Ley.charAt(i) == ' '){
 	    	 	Probel++;
 	    	 }} }
-		else
-		{
-					
-		}
+	
 		Sum=Ley.length()-Probel;
-	}
-	
-	
+	}	
 }
