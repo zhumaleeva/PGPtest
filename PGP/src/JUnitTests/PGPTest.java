@@ -17,7 +17,7 @@ public class PGPTest {
 		PGPs ss;
 		// test 1		
 		s = new PGPs("Привет");
-		ss = new PGPs("Привет2");
+		ss = new PGPs("Привет");
 		//String ss = ("4aa");
 		
 		//equals(s.Sum);
